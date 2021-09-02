@@ -1,0 +1,51 @@
+<script>
+//     1. Swap the Values without using third Variable 
+ 
+//  a = 9
+//   b = 21
+//  Output: a = 21
+//               b = 9  
+// var a=9;
+// var b=10;
+// if(a==9){
+//     alert(a =21);
+// }
+// else{
+//     alert(b=9) ;
+// }
+// </script>
+
+<script>
+    // 2. Out of the given values below, find out the second largest value which is not repeating itself 
+// 5 1 5 4 3 2 4 1 
+
+function secondLargestValue(arr,arr_size){
+    let i, first,second;
+    if(arr_size<2){
+        document.write("invalid input ");
+        return;
+    }
+
+arr.sort();
+for(i==arr_size -2;i>=0;i--){
+if(arr[i]!=arr[arr_size-1]){
+
+        document.write("the Second largesr no"+
+        arr[i]);
+        return;
+    }
+}
+}
+document.write("there is no second Integer largest"+"<br>")
+
+
+
+
+let arr=[5, 1 ,5, 4, 3, 2 ,4, 1 ];
+let n=arr.length;
+secondLargestValue(arr,n);
+
+
+
+
+</script>
